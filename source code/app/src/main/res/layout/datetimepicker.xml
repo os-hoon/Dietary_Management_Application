@@ -1,0 +1,92 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    >
+
+		<DatePicker
+			android:id="@+id/datePicker"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<TableLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:id="@+id/textView5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="100dp"
+					android:text="Total Kcal : "
+					android:textSize="20dp" />
+
+				<TextView
+					android:id="@+id/kcal"
+					android:textSize="20dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+
+			</TableRow>
+
+			<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:id="@+id/textView7"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="100dp"
+					android:textSize="20dp"
+					android:text="Total Protein : " />
+
+				<TextView
+					android:id="@+id/protein"
+					android:textSize="20dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</TableRow>
+		</TableLayout>
+
+		<ListView
+			android:id="@+id/listview"
+			android:layout_width="match_parent"
+			android:layout_height="213dp">
+
+		</ListView>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<androidx.appcompat.widget.AppCompatButton
+				android:id="@+id/add"
+				android:layout_width="60dp"
+				android:layout_height="35dp"
+				android:background="@drawable/buttonshape"
+				android:text="추가"
+				android:textColor="#FFFFFF"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.993"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:layout_constraintVertical_bias="0.0" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CreateProfileTheme" parent="Theme.AppCompat.Light">
+
+        <!-- 상단 Title 배경색 -->
+        <item name="colorAccent">@color/blue</item>
+
+        <!-- 선택한 날짜 배경 색 -->
+        <item name="colorControlActivated">@color/blue</item>
+    </style>
+</resources>
